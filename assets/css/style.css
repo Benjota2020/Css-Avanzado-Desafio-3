@@ -1,0 +1,214 @@
+
+.header{
+    grid-area: header;
+    background-color: #c72525;
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-style: normal;
+}
+
+
+.header select{
+   width: 95%;
+   margin-bottom: 10px ;
+   border-radius: 4px ;
+   font-family: "Protest Guerrilla", sans-serif;
+   font-style: normal;
+}
+
+
+.main{
+    padding-top: 15px;
+    grid-area: main;
+    display: grid;
+    grid-template-rows: auto auto ;
+    background-color: #c8d507;
+    gap: 20px;
+    display:list-item
+}
+.main ul{
+    justify-content: center;
+    margin-top: 15px;
+}
+.main img{
+    height: 250px;
+    width: 250px;
+    padding: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 4px;
+    
+}
+
+.card button{
+    margin: 30px;
+}
+.card0 button{
+    margin: 30px;
+}
+.card h1 {
+    margin: 0px;
+    text-align: center;
+    font-size: 200%;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.card h2 {
+    margin: 0px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 140%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.card0 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 4px;
+}
+.card0 h1 {
+        margin: 0px;
+        text-align: center;
+        font-size: 200%;
+        font-family: "SUSE", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+}
+.card0 h2 {
+        margin: 0px;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 140%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #4b574db0;
+    
+    
+}
+.sidebar h1{
+    font-size: 25px;
+    color:#000000 ;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.sidebar p {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin-right: 20px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+
+.footer{
+    grid-area: footer;
+    background-color: #c72525;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 15px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-style: normal;
+}
+
+
+
+
+@media (min-width:576px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'sidebar header' 
+        'sidebar main ' 
+        'footer main';
+        grid-template-columns: 1fr 5fr;
+        height: 100vh;
+    }
+    .sidebar{
+        padding-top: 15px;
+    }
+    .sidebar div{
+        display: flex;
+        justify-content: center;
+    }
+    .sidebar i{
+        padding-top: 8px;
+    }
+    .sidebar e{
+        display: none;
+    }
+    .main section{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        background-color: #c8d507;
+        gap: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 2px;
+    }
+    
+}
+@media (max-width:576px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'sidebar'
+        'header'  
+        'main ' 
+        'footer';
+        grid-template-columns: 1fr;
+    }
+    .main{
+            grid-area: main;
+            display: grid;
+            grid-template-columns: auto ;
+            justify-content: center;
+        }
+    .sidebar p{
+            display: none;
+        }
+    .sidebar div{
+            display: flex;
+            margin-right: 15px;
+            padding-top: 10px;
+            }
+    .sidebar i{
+            padding-top: 8px;
+            padding-left: 25px;
+        }
+    .sidebar e{
+            padding-top: 8px;
+            margin-left: 380px
+        }
+    .card0 {
+            display: none;
+        }
+
+    
+}
+
